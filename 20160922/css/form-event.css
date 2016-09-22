@@ -1,0 +1,12 @@
+.btn{
+  text-decoration: none;
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  /*设置line-height之后字体可以居中*/
+  line-height: 30px;
+  text-align: center;
+}

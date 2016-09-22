@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>省市区联动</title>
+</head>
+<body>
+  <li>
+    <select class="provinces" name="" onchange="provinceChange()">
+      <option class="" value="请选择">请选择</option>
+      <option class="province" value="江苏">江苏</option>
+      <option class="province" value="河南">河南</option>
+
+    </select>
+  </li>
+  <li>
+    <select class="citys" name="" onchange="cityChange()">
+      <option class="" id="" value="请选择">请选择</option>
+      <option class="city" id="江苏" value="南京">南京</option>
+      <option class="city" id="江苏" value="苏州">苏州</option>
+      <option class="city" id="江苏" value="徐州">徐州</option>
+      <option class="city" id="河南" value="郑州">郑州</option>
+      <option class="city" id="河南" value="商丘">商丘</option>
+      <option class="city" id="河南" value="开封">开封</option>
+    </select>
+  </li>
+  <li>
+    <select class="blocks" name="">
+      <option class="" id="" value="请选择">请选择</option>
+      <option class="block" id="南京" value="玄武区">玄武区</option>
+      <option class="block" id="南京" value="白下区">白下区</option>
+      <option class="block" id="南京" value="江宁区">江宁区</option>
+      <option class="block" id="苏州" value="金阊区">金阊区</option>
+      <option class="block" id="苏州" value="虎丘区">虎丘区</option>
+      <option class="block" id="苏州" value="沧浪区">沧浪区</option>
+      <option class="block" id="徐州" value="铜山县">铜山县</option>
+      <option class="block" id="徐州" value="新沂市">新沂市</option>
+      <option class="block" id="徐州" value="邳州市">邳州市</option>
+      <option class="block" id="郑州" value="管城区">管城区</option>
+      <option class="block" id="郑州" value="中原区">中原区</option>
+      <option class="block" id="郑州" value="二七区">二七区</option>
+      <option class="block" id="商丘" value="睢阳区">睢阳区</option>
+      <option class="block" id="商丘" value="梁园区">梁园区</option>
+      <option class="block" id="商丘" value="永城市">永城市</option>
+      <option class="block" id="开封" value="顺河区">顺河区</option>
+      <option class="block" id="开封" value="金明区">金明区</option>
+      <option class="block" id="开封" value="龙亭区">龙亭区</option>
+    </select>
+    <script src="../js/pcb.js" charset="utf-8"></script>
+  </li>
+</body>
+</html>
