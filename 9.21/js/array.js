@@ -80,6 +80,7 @@ console.log(arr1.findIndex(function(item){
   }
 }));
 
+//数组中是否包含值, 包含返回索引,不包含返回-1;
 console.log(arr1.indexOf(4));
 
 //筛选,所有大于8的
