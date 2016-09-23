@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js本地存储</title>
+</head>
+<body>
+  <div id="content">
+
+  </div>
+  <script type="text/html" id="table">
+    <table>
+      <tr>
+        <th>id</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>种族</th>
+        <th>爱好</th>
+      </tr>
+      {{each list as value i}}
+      <tr>
+        <td>{{value.id}}</td>
+        <td>{{value.name}}</td>
+        <td>{{value.age}}</td>
+        <td>{{value.race}}</td>
+        <td>{{value.hobby}}</td>
+      </tr>
+      {{/each}}
+    </table>
+  </script>
+  <script src="../template.js">
+
+  </script>
+  <script src="../js/storage.js" charset="utf-8"></script>
+</body>
+</html>

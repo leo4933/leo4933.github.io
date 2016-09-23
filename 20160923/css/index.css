@@ -1,0 +1,16 @@
+html,body{
+  height:100%;
+}
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.link{
+  color: green;
+  font-size: 25px;
+}
