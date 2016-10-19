@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>当当热搜</title>
-  <link rel="stylesheet" href="assets/lib/weui/weui.css" media="screen" title="no title">
-</head>
-<body>
-  <div class="" ng-app ='app' ng-controller ='mainController'>
-    <div class="" ng-view>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>当当热搜</title>
+    <link rel="stylesheet" href="assets/lib/weui/weui.css" media="screen" title="no title">
+</head>
+
+<body>
+    <div class="" ng-app='app' ng-controller='mainController'>
+        <div class="" ng-view>
+        </div>
+
+
+        <div class="weui-tabbar" ng-controller='mainController'>
+            <a href="#/" ng-click='linkTo(0)' class="weui-tabbar__item {{selectedIndex==0?'weui-bar__item_on':" "}}">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">首页</p>
+            </a>
+            <a href="#/my" ng-click='linkTo(1)' class="weui-tabbar__item {{selectedIndex==1?'weui-bar__item_on':" "}}">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">我的</p>
+            </a>
+            <a href="#/hot" ng-click='linkTo(2)' class="weui-tabbar__item {{selectedIndex==2?'weui-bar__item_on':" "}}">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">当当热销</p>
+            </a>
+            <a href="#/link" ng-click='linkTo(3)' class="weui-tabbar__item {{selectedIndex==3?'weui-bar__item_on':" "}}">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">联系</p>
+            </a>
+
+
+        </div>
     </div>
-  </div>
-  <script src="assets/lib/angular.js" charset="utf-8"></script>
-  <script src="assets/lib/angular-route.js" charset="utf-8"></script>
-  <script src="assets/app.js" charset="utf-8"></script>
-  <script src="assets/api/service.js" charset="utf-8"></script>
-  <script src="assets/controllers/main_controller.js" charset="utf-8"></script>
+    <script src="assets/lib/angular.js" charset="utf-8"></script>
+    <script src="assets/lib/angular-route.js" charset="utf-8"></script>
+    <script src="assets/app.js" charset="utf-8"></script>
+    <script src="assets/api/service.js" charset="utf-8"></script>
+    <script src="assets/controllers/main_controller.js" charset="utf-8"></script>
 </body>
+
 </html>
