@@ -10,7 +10,7 @@ app.factory('commonService',['$http',function ($http) {
    */
   service.getData = function(type,callBack){
     $http({
-      url:'../../data/book'+type+'.json',
+      url:'/dangdang-app-angularjs/data/ertong.json',
       method:'get'
     })
     .then(function(res){
@@ -20,4 +20,5 @@ app.factory('commonService',['$http',function ($http) {
       console.log(err);
     });
   };
+  return service;
 }]);
