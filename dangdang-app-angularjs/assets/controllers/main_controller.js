@@ -1,4 +1,4 @@
-app.controller('mainController',['$scope','commonService',function($scope,c_s){
+app.controller('mainController',['$scope',function($scope){
   // c_s.getData('ertong',function(res){
   //   console.dir(res);
   // });
