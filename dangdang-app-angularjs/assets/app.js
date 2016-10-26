@@ -6,8 +6,8 @@ app.config(['$routeProvider',function($routeProvider){
       templateUrl:'./assets/tpl/index.html',
       controller:''
     })
-    .when('/my',{
-      templateUrl:'./assets/tpl/blog.html',
+    .when('/video',{
+      templateUrl:'./assets/tpl/video.html',
       controller:''
     })
     .when('/hot',{
