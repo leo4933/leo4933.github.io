@@ -9,6 +9,8 @@ app.controller('mainController',['$scope',function($scope){
   switch (lastStr) {
     case 'hot':$scope.selectedIndex = 2;
       break ;
+    case 'video':$scope.selectedIndex = 1;
+      break ;
     default: $scope.selectedIndex = 0;
       break;
   }
